@@ -1,0 +1,29 @@
+.obras-sociales {
+    .carousel {
+        text-align: center;
+        height: auto;
+        .carousel-inner {
+            .item {
+                height: auto;
+                -webkit-transition: -webkit-transform .3s ease-in-out;
+                -o-transition: -o-transform .3s ease-in-out;
+                transition: transform .3s ease-in-out;
+                transition: .3s ease-in-out;
+    
+                p {
+                    padding: 10px;
+                    text-shadow: 1px 1px #97CFD0;
+                }
+            }
+        }
+        .carousel-control.right{
+            background-image: none;
+        }
+        .carousel-control.left{
+            background-image: none;
+        }
+        .carousel-control{
+            color: black;
+        }
+    }
+}

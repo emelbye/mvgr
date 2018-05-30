@@ -1,0 +1,24 @@
+<section class="obras-sociales container">
+    <h2 class="wow fadeIn">Obras<span class="text-muted"> Sociales.</span></h2>
+    <br>
+    <div id="osCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div [ngClass]="{'item': true, 'active': i==0}" *ngFor="let row of osssMatrix; let i=index">
+                <div class="row">
+                    <div [ngClass]="{'col-lg-2': true, 'col-lg-offset-1': j==0}" *ngFor="let os of row; let j=index">
+                        <img src="{{os.src}}" alt="os.src" height="72">
+                        <p>{{os.dsc}}</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <a class="left carousel-control" href="#osCarousel" data-slide="prev">
+            <i class="material-icons">keyboard_arrow_left</i>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#osCarousel" data-slide="next">
+                <i class="material-icons">keyboard_arrow_right</i>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>

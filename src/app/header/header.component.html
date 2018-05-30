@@ -1,0 +1,69 @@
+<header id="home">
+    <nav [ngClass]="headerClass" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="../../assets/images/psicologia.png">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul #menuItems class="nav navbar-nav navbar-right">
+                    <li class="active"><a (click)="itemClicked('#home')" href="#home">Inicio</a></li>
+                    <li><a (click)="itemClicked('#obras-sociales')" href="#obras-sociales">Obras Sociales</a></li>
+                    <li><a (click)="itemClicked('#services')" href="#services">Servicios</a></li>
+                    <li><a (click)="itemClicked('#contact')" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="myCarousel" class="carousel carousel-shadow slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <section class="video-header">
+                    <video class="video-sample visible" poster="../../assets/images/video_poster.png" autoplay="" loop="" muted="">
+                        <source src="../../assets/videos/background.mp4" type="video/mp4">
+                    </video>
+                </section>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Ma. Victoria Garcia Rulli</h1>
+                        <p>Lic. en Psicología en Córdoba.</p>
+                        <p class="cita">"Nuestros complejos son la fuente de nuestra debilidad; pero con frecuencia, son también la fuente de nuestra fuerza." (Sigmund Freud)</p>
+                        <p>
+                            <a class="btn btn-lg btn-primary" href="#contact" role="button">Contacto</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="facebook-share">
+            <div class="fb-share-button" 
+            data-href="http://www.licgarciarulli.com.ar" 
+            data-layout="button_count">
+        </div>
+    </div>
+    
+    <div class="backToTop">
+        <a href="#">
+            <i class="material-icons md-48">arrow_drop_up</i>
+        </a>
+    </div>
+</header>
+
+<script>
+
+    $(".nav a").on("click", function(){
+      $(".nav").find(".active").removeClass("active");
+      $(this).parent().addClass("active");
+      consol.log("clicked");
+    });
+    
+    </script>

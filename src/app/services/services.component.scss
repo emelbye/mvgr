@@ -1,0 +1,75 @@
+.container-fluid {
+    padding: 20px 0px 20px 0px;
+}
+
+.services {
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .col-lg-4 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .col-lg-4 p {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+    h2 {
+        font-weight: normal;
+    }
+    .featurette {
+        padding: 100px;
+        min-height: 500px;
+        
+    }
+    .featurette-heading {
+        font-weight: 300;
+        line-height: 1;
+        letter-spacing: -1px;
+    }
+    .featurette-no-background {
+        transition:all 0.3s ease;
+        background-color: transparent;
+    }
+    .featurette-no-background:hover {
+        background-color: #EEE;
+    }
+    .featurette-background {
+        transition:all 0.3s ease;
+        background-color: #97CFD0;
+    }
+    .featurette-background:hover {
+        background-color: #75BBB0;
+    }
+    .featurette-image {
+        min-width: 40%;
+        max-width: 50%;
+    }
+    .parallax { 
+        text-align: center;
+        background-image: url("../../assets/images/session.jpg");
+        height: 400px; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        h1 {
+            color: white;
+            text-shadow: 2px 2px black;
+            transform: translateY(200%);
+            padding: 20px 0px 20px 0px;
+            background:rgba(0,0,0,0.3);
+        }
+    }
+}
+
+@media screen and (max-width: 770px){
+    .services {
+        .featurette {
+            padding: 20px;
+        }
+    }
+}
